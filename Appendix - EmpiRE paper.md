@@ -19,6 +19,7 @@ This page contains the detailed list of data sources used in the paper. Links we
 * [LUCENE-2308](https://issues.apache.org/jira/browse/LUCENE-2308?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel)
 * [Request for code freeze](http://mail-archives.apache.org/mod_mbox/lucene-dev/201203.mbox/%3CCAOdYfZXXo7FCagxLnqGgg2+Sgn2d9KvOm2gPhnUn7TCZRtoQCQ@mail.gmail.com%3E)
 * [How Apache Works](http://www.apache.org/foundation/how-it-works.html#meritocracy)
+
 # Mozilla
 * [IonMonkey feature page](https://wiki.mozilla.org/Platform/Features/IonMonkey)
 * [Javascript prioritization wiki](https://wiki.mozilla.org/Platform/2012-Q2-Goals#JS)
