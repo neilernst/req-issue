@@ -1,0 +1,26 @@
+{
+    "name": "Flexible Indexing",
+    "summary": "Make indexing more flexible, so that one could e.g., not store positions or even frequencies, or alternately, to store extra information with each position, or to even use different posting compression algorithms.",
+    "tests": {
+
+    },
+    "stakeholders": {
+        "committers": [],
+        "contribs": [],
+        "users":[]
+    },
+    "nfrs": {},
+    "related-commits": [
+        {}
+    ],
+    "related-issues": [
+        {
+            "url": "https://issues.apache.org/jira/browse/LUCENE-1458",
+            "priority": "minor",
+            "fixed-in": "4.0-ALPHA",
+            "opened": "18/Nov/08",
+            "closed": "03/Dec/09"
+        }
+    ],
+    "goal-model": {}
+}
