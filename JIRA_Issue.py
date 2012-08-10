@@ -32,4 +32,9 @@ class JIRA_Issue:
 
         self.unique_authors = defaultdict(int)
         self.fix_version = None
-        self.issue_num = None
+        #self.issue_num = None
+        self.creator_name = None
+        self.name = None
+        self.summary = None
+        self.url = None
+
