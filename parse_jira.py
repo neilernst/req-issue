@@ -1,17 +1,20 @@
 import urllib2
 import json
 import datetime
-from JIRA_Issue import JIRA_Issue
+from Jira_Issue import Jira_Issue
+
+DB_LOC = '/Users/nernst/Dropbox/research/projects/req-issues/'
+DB_NAME = 'lucene-features.db'
 
 
 def parse_issue(issue_arg):
-    """ Return a JIRA_Issue for the given issue argument"""
+    """ Return a Jira_Issue for the given issue argument"""
     #ssue_pre = 'LUCENE-'
     issue_num = issue_arg
     base_url = 'https://issues.apache.org/jira/rest/api/latest/issue/'
 
     url = base_url + issue_num
-    issue = JIRA_Issue(issue_num)
+    issue = Jira_Issue(issue_num)
     print url
 
     try:
@@ -49,3 +52,19 @@ def parse_issue(issue_arg):
         issue.events['comment'].append(created)
 
     return issue
+
+
+def store_issue(issue):
+    """ Store a Jira_Issue in the database"""
+    import sqlite3
+    conn = sqlite3.connect(DB_LOC + DB_NAME)
+    c = conn.cursor()
+    insert_stmt = 'INSERT INTO work_item (name, summary, tool_id, url, created, \
+            creator_text, closed, issue_type, fix_version) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)'
+
+    c.execute(insert_stmt, (issue.name, issue.summary, issue.issue_num, issue.url,
+            issue.events['issue_open'], issue.creator_name, issue.events['issue_close'],
+            'New Feature', issue.fix_version))  # use ? interpolation with issue instance
+
+    conn.commit()
+    conn.close()

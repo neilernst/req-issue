@@ -15,6 +15,7 @@ CREATE table work_item (
     tool_id TEXT, -- e.g. LUCENE-1458
     url TEXT,
     created,
+    creator_text, --used because we may not have this link yet
     creator INTEGER, -- from the user table
     closed,
     issue_type,
@@ -69,9 +70,6 @@ CREATE table file_changeset (
 -- CREATE table website ();
 -- CREATE TABLE sources ();
 -- CREATE table tests ();
--- CREATE table nfr_keywords (id, term) as (1,maintainability, 2, portability) -- essentially the wordbag from MSR
+-- CREATE table nfr_keywords (id, term) as (1, maintainability, 2, portability) -- essentially the wordbag from MSR
 
--- queries that DEFINE the feature
--- Just anything that is selected from the initial choice of the work item. So select the right issue number, then add in the
-
--- queries which look for related features
+-- CREATE table architecutre (id, package, relation) -- this will store the software architecture so we can e.g. find features that are in the same package.
