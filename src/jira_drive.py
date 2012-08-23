@@ -4,14 +4,16 @@
 import urllib2
 import json
 import datetime
-from parse_jira import parse_issue
+import parse_jira as pj
 
 prot = 'https://'
 query_url = 'issues.apache.org/jira/rest/api/latest/search?maxResults=100&jql='
-query = "project='LUCENE' AND (status='In Progress' OR status=Open) AND type='New Feature' AND priority=Major"
+query = "project='LUCENE' AND (status='In Progress' OR status=Open) \
+    AND type='New Feature' AND priority=Major"
 
 # all new features opened at least 2 years ago and recently updated
-"project = LUCENE AND issuetype = 'New Feature' and resolution = Unresolved and createdDate < '2010-07-12' and updatedDate > '2012-01-01'"
+"project = LUCENE AND issuetype = 'New Feature' and resolution = Unresolved \
+    and createdDate < '2010-07-12' and updatedDate > '2012-01-01'"
 
 url = prot + query_url + urllib2.quote(query)
 try:
@@ -23,6 +25,7 @@ except urllib2.URLError, e:
 
 issues = json.load(data)['issues']
 for issue in issues:
-    x = parse_issue(issue['key'])
+    x = pj.parse_issue(issue['key'])
     # do something ...
-    print x.get_fixed_in()
+    #print x.get_fixed_in()
+    pj.store_issue(x)

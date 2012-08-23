@@ -31,6 +31,10 @@ def parse_issue(issue_arg):
     num_comments = len(comments)
     resolve = objs['fields']['resolutiondate']
     opened = objs['fields']['created']
+    issue.creator_name = objs['fields']['reporter']['displayName']
+    issue.name = objs['fields']['summary']
+    issue.summary = objs['fields']['description']
+    issue.url = 'https://issues.apache.org/jira/browse/' + issue_num
     issue.events['issue_open'] = \
         datetime.datetime.strptime(opened[:-9], '%Y-%m-%dT%H:%M:%S')
     try:
@@ -41,7 +45,7 @@ def parse_issue(issue_arg):
     try:
         issue.fix_version = objs['fields']['fixVersions'][0]['name']
     except IndexError, e:
-        # there was no assigned version this will be applied to
+        # there was no assigned version this will be applied tool_id
         issue.fix_version = 'TBD'
 
     for c in comments:
@@ -63,8 +67,12 @@ def store_issue(issue):
             creator_text, closed, issue_type, fix_version) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)'
 
     c.execute(insert_stmt, (issue.name, issue.summary, issue.issue_num, issue.url,
-            issue.events['issue_open'], issue.creator_name, issue.events['issue_close'],
-            'New Feature', issue.fix_version))  # use ? interpolation with issue instance
+        issue.events['issue_open'], issue.creator_name, issue.events['issue_close'],
+        'New Feature', issue.fix_version))  # use ? interpolation with issue instance
 
     conn.commit()
     conn.close()
+
+if __name__ == '__main__':
+    z = parse_issue('LUCENE-4072')
+    store_issue(z)

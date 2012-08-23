@@ -2,7 +2,7 @@ from collections import defaultdict
 import datetime
 
 
-class JIRA_Issue:
+class Jira_Issue:
     """ A class to hold data about issues relevant to requirements"""
 
     def get_duration(self):
