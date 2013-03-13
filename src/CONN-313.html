@@ -1,0 +1,972 @@
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>[#CONN-313] As a CONNECT adopter, I want CONNECT 4.0 to  be tested on WebSphere 7.x using  JDK 1.6 to validate that CONNECT will work in my preferred enviornment - CONNECT Issue Tracker </title>
+
+    <meta content="general" name="decorator" />
+    <link rel="index" href="/secure/IssueNavigator.jspa?atl_token=787a7fdec62ca8a2bf9ddc8629efdfddc17c6166"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+    
+
+    
+<meta id="atlassian-token" name="atlassian-token" content="787a7fdec62ca8a2bf9ddc8629efdfddc17c6166">
+
+
+    <link rel="shortcut icon" href="/s/591/10/_/favicon.ico">
+    <link rel="icon" type="image/png" href="/s/591/10/_/images/icons/favicon.png">
+
+    
+    <script type="text/javascript">var contextPath = '';</script>
+<link type="text/css" rel="stylesheet" href="/s/591/10/3.0.9/_/download/batch/com.atlassian.auiplugin:ajs/com.atlassian.auiplugin:ajs.css" media="all">
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" href="/s/591/10/3.0.9/_/download/batch/com.atlassian.auiplugin:ajs/com.atlassian.auiplugin:ajs.css?ieonly=true" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/s/591/10/1.0/_/download/batch/jira.webresources:jira-global/jira.webresources:jira-global.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/591/10/1.0/_/download/batch/jira.webresources:jquery-fancybox/jira.webresources:jquery-fancybox.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/591/10/1.0/_/download/resources/jira.webresources:calendar/calendar.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/591/10/1.0/_/download/batch/jira.webresources:autocomplete/jira.webresources:autocomplete.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/591/10/1.0/_/download/batch/jira.webresources:global-static/jira.webresources:global-static.css" media="all">
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" href="/s/591/10/1.0/_/download/batch/jira.webresources:global-static/jira.webresources:global-static.css?ieonly=true" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/s/591/10/1.0/_/download/batch/jira.webresources:global-static/jira.webresources:global-static.css?media=print" media="print">
+<link type="text/css" rel="stylesheet" href="/s/591/10/1.0/_/download/resources/jira.webresources:global-static/global.css" media="all">
+<script type="text/javascript" src="/s/591/10/3.0.9/_/download/batch/com.atlassian.auiplugin:ajs/com.atlassian.auiplugin:ajs.js" ></script>
+<script type="text/javascript" src="/s/591/10/1.0/_/download/batch/jira.webresources:jira-global/jira.webresources:jira-global.js" ></script>
+<script type="text/javascript" src="/s/591/10/1.0/_/download/batch/jira.webresources:jquery-fancybox/jira.webresources:jquery-fancybox.js" ></script>
+<script type="text/javascript" src="/s/591/10/1.0/_/download/batch/jira.webresources:calendar/jira.webresources:calendar.js" ></script>
+<script type="text/javascript" src="/s/591/10/1.0/_/download/batch/jira.webresources:viewissue/jira.webresources:viewissue.js" ></script>
+<script type="text/javascript" src="/s/591/10/1.0/_/download/batch/jira.webresources:autocomplete/jira.webresources:autocomplete.js" ></script>
+<script type="text/javascript" src="/s/591/10/1.0/_/download/batch/jira.webresources:jira-fields/jira.webresources:jira-fields.js" ></script>
+<script type="text/javascript" src="/s/591/10/1.0/_/download/batch/jira.webresources:calendar-en/jira.webresources:calendar-en.js" ></script>
+<script type="text/javascript" src="/s/591/10/5.4.2/_/download/batch/com.pyxis.greenhopper.jira:gh-globalkeyboardshortcuts/com.pyxis.greenhopper.jira:gh-globalkeyboardshortcuts.js" ></script>
+<script type="text/javascript" src="/s/591/10/1.0/_/download/batch/jira.webresources:key-commands/jira.webresources:key-commands.js" ></script>
+<script type="text/javascript" src="/s/591/10/1.0/_/download/batch/jira.webresources:header/jira.webresources:header.js" ></script>
+<script type="text/javascript" src="/s/591/10/1.0/_/download/batch/jira.webresources:set-focus/jira.webresources:set-focus.js" ></script>
+
+    
+        <script type="text/javascript" src="/rest/api/1.0/shortcuts/591/59d4798a6c3a58c3249b1ca1785a2dc0/shortcuts.js?context=issueaction&context=issuenavigation"></script>
+    
+    <link rel="search" type="application/opensearchdescription+xml" href="/osd.jsp" title="CONNECT Issue Tracker"/>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="jira" class="nl type-ab stalker">
+
+
+
+
+
+
+
+  
+
+
+<div id="header">
+    <div id="header-top">
+        <a id="logo" href="/secure/Dashboard.jspa">
+                        <img class="logo" src="https://developer.connectopensource.org/download/attachments/73138191/connect-jira.png" width="178" height="30" border="0" alt="CONNECT Issue Tracker" />
+                    </a>
+                <form id="quicksearch" action="/secure/QuickSearch.jspa" method="post" class="dont-default-focus">
+            <div>
+                <label for="quickSearchInput" title="Go directly to an issue by typing a valid issue key, or run a free-text search." class="overlabel">Quick Search</label>
+                <input id="quickSearchInput" class="quickSearchInput" type="text" size="25" title="Go directly to an issue by typing a valid issue key, or run a free-text search." name="searchString" accessKey="q" />
+            </div>
+        </form>
+                
+        <div id="header-details-user" class="aui-dd-parent header-link-container">
+         <a class="lnk" rel="nofollow" href="/login.jsp?os_destination=%2Fbrowse%2FCONN-313">Log In</a>
+        <span class="drop-wrap">
+        <a class="drop aui-dd-link"
+                        href="#"><span>Access more options</span>
+        </a>
+    </span>
+    <div class="aui-dropdown standard hidden">
+                                                                <ul id="jira-help" class="  first     last  ">
+                                            <li class="dropdown-item"><a  id="view_help"   class="item-link "  title="Goto the online documentation for JIRA" href="http://docs.atlassian.com/jira/docs-042/JIRA+Documentation?clicked=jirahelp">Online Help</a></li>
+                                            <li class="dropdown-item"><a  id="keyshortscuthelp"   class="item-link "  title="Get more information about JIRA's Keyboard Shortcuts" href="/secure/ViewKeyboardShortcuts!default.jspa">Keyboard Shortcuts</a></li>
+                                            <li class="dropdown-item"><a  id="view_about"   class="item-link "  title="Get more information about JIRA" href="http://www.atlassian.com/software/jira">About JIRA</a></li>
+                                    </ul>
+                        </div>
+</div>
+
+        
+    </div>
+    <div id="header-bottom">
+                <div id="menu">
+            
+            
+<ul id="main-nav" class="menu-bar">
+                        <li class="aui-dd-parent lazy  ">
+                    <a class="lnk"
+                href="/secure/Dashboard.jspa"
+                 id="home_link"                 accessKey="h"                 title="View your current Dashboard"                >Dashboards</a>
+
+                    <span class="drop-wrap">
+            <a class="drop aui-dd-link"
+                                    id="home_link_drop"
+                    rel="home_link"
+                    accessKey="d"
+                    title="Access more options (Alt+d)"
+                                href="#"><span>Access more options (Alt+d)</span></a></span>
+            <div class="aui-dropdown standard hidden"></div>
+                </li>
+                        <li class="aui-dd-parent lazy  ">
+                    <a class="lnk"
+                href="/browse/CONN"
+                 id="browse_link"                 accessKey="b"                 title="Browse currently active project 'CONNECT'"                >Projects</a>
+
+                    <span class="drop-wrap">
+            <a class="drop aui-dd-link"
+                                    id="browse_link_drop"
+                    rel="browse_link"
+                    accessKey="p"
+                    title="Access more options (Alt+p)"
+                                href="#"><span>Access more options (Alt+p)</span></a></span>
+            <div class="aui-dropdown standard hidden"></div>
+                </li>
+                        <li class="aui-dd-parent lazy  selected  ">
+                    <a class="lnk"
+                href="/secure/IssueNavigator.jspa"
+                 id="find_link"                 accessKey="f"                 title="View your current filter"                >Issues</a>
+
+                    <span class="drop-wrap">
+            <a class="drop aui-dd-link"
+                                    id="find_link_drop"
+                    rel="find_link"
+                    accessKey="i"
+                    title="Access more options (Alt+i)"
+                                href="#"><span>Access more options (Alt+i)</span></a></span>
+            <div class="aui-dropdown standard hidden"></div>
+                </li>
+                        <li class="aui-dd-parent nonlazy  ">
+                    <a class="lnk"
+                href="/secure/GreenHopper.jspa"
+                 id="greenhopper_menu"                                 title="Manage your project with GreenHopper"                >Agile</a>
+
+                                                                                                            <span class="drop-wrap">
+                            <a class="drop aui-dd-link"
+                                                                    id="greenhopper_menu_drop"
+                                    accessKey="g"
+                                    rel="greenhopper_menu"
+                                    title="Access more options (Alt+g)"
+                                                                href="#"><span>Access more options</span></a></span>
+                            <div class="aui-dropdown standard hidden"><div>
+                                                                        <ul id="greenhopper_menu_dropdown" class=" first   last  ">
+                                                            <li class="dropdown-item"><a
+                                     id="planningboard-mlink"                                     class="item-link   "
+                                                                                                            href="/secure/VersionBoard.jspa">Planning Board</a></li>
+                                                            <li class="dropdown-item"><a
+                                     id="taskboard-mlink"                                     class="item-link   "
+                                                                                                            href="/secure/TaskBoard.jspa">Task Board</a></li>
+                                                            <li class="dropdown-item"><a
+                                     id="chartboard-mlink"                                     class="item-link   "
+                                                                                                            href="/secure/ChartBoard.jspa">Chart Board</a></li>
+                                                            <li class="dropdown-item"><a
+                                     id="releasedboard-mlink"                                     class="item-link   "
+                                                                                                            href="/secure/ArchiveChartBoard.jspa">Released Board</a></li>
+                                                    </ul>
+                                                                        </div></div>
+                                            </li>
+    </ul>
+
+            
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<fieldset class="hidden parameters">
+    <input type="hidden" title="ajaxTimeout" value="The call to the JIRA server did not complete within the timeout period.  We are unsure of the result of this operation.">
+    <input type="hidden" title="ajaxUnauthorised" value="You are not authorized to perform this operation.  Please try to <a href='/login.jsp?os_destination=%2Fbrowse%2FCONN-313'>log in</a>.
+       
+    ">
+    <input type="hidden" title="baseURL" value="https://issues.connectopensource.org:443">
+    <input type="hidden" title="ajaxCommsError" value="The JIRA server could not be contacted.  This may be a temporary glitch or the server may be down.">
+    <input type="hidden" title="ajaxServerError" value="The JIRA server was contacted but has returned an error response. We are unsure of the result of this operation.">
+    <input type="hidden" title="ajaxErrorCloseDialog" value="Close this dialog and press refresh in your browser">
+    <input type="hidden" title="ajaxErrorDialogHeading" value="Communications Breakdown">
+
+    <input type="hidden" title="dirtyMessage" value="You have entered new data on this page. If you navigate away from this page without first saving your data, the changes will be lost.">
+    <input type="hidden" title="dirtyDialogMessage" value="You have entered new data in this dialog. If you navigate away from this dialog without first saving your data, the changes will be lost. Click cancel to return to the dialog.">
+    <input type="hidden" title="keyType" value="Type">
+    <input type="hidden" title="keyThen" value="then">
+    <input type="hidden" title="dblClickToExpand" value="Double click to expand">
+    <input type="hidden" title="actions" value="Actions">
+    <input type="hidden" title="removeItem" value="Remove">
+    <input type="hidden" title="workflow" value="Workflow">
+    <input type="hidden" title="labelNew" value="New Label">
+    <input type="hidden" title="enterIssueKey" value="Enter issue key">
+    <input type="hidden" title="issueActionsHint" value="Begin typing for available operations or press down to see all">
+    <input type="hidden" title="closelink" value="Close">
+    <input type="hidden" title="dotOperations" value="Operations">
+    <input type="hidden" title="dotLoading" value="Loading...">
+    <input type="hidden" title="frotherSuggestions" value="Suggestions">
+    <input type="hidden" title="frotherNomatches" value="No Matches">
+    <input type="hidden" title="attachmentsUnknownError" value="Unknown error occurred uploading file.">
+    <input type="hidden" title="attachmentsXsrfTimeout" value="Your session has timed out or you were logged out. Please save your work and reload the page.">
+    <input type="hidden" title="multiselectVersionsError" value="{0} is not a valid version.">
+    <input type="hidden" title="multiselectComponentsError" value="{0} is not a valid component.">
+    <input type="hidden" title="multiselectGenericError" value="The value {0} is invalid.">
+</fieldset>
+
+
+
+
+
+
+
+<fieldset class="hidden parameters">
+    <input type="hidden" id="viewMoreMsg" value="Click to view {0} more">
+    <input type="hidden" id="hideMsg" value="Hide" >
+    <input type="hidden" id="error-401" value="Cannot perform this operation. You are not logged in." >
+    <input type="hidden" id="issueOpTitleUnvote" value="Remove vote for this issue" >
+    <input type="hidden" id="issueOpTitleVote" value="Vote for this issue" >
+    <input type="hidden" id="issueOpTitleWatch" value="Start watching this issue" >
+    <input type="hidden" id="issueOpTitleUnwatch" value="Stop watching this issue" >
+    <input type="hidden" id="issueOpUnvote" value="Remove Vote" >
+    <input type="hidden" id="issueOpVote" value="Add Vote" >
+    <input type="hidden" id="issueOpWatch" value="Watch Issue" >
+    <input type="hidden" id="issueOpUnwatch" value="Stop Watching" >
+    <input type="hidden" id="i18nVote" value="Vote" >
+    <input type="hidden" id="i18nVoted" value="Voted" >
+    <input type="hidden" id="i18nWatch" value="Watch" >
+    <input type="hidden" id="i18nWatching" value="Watching" >
+</fieldset>
+
+<div id="stalker"  class="stalker">
+    <div class="item-header">
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<h1 class="item-name avatar" style="background-image:url(/secure/projectavatar?pid=10140&amp;avatarId=10080&amp;size=large)">
+        
+            <img id="project-avatar" alt="" class="project-avatar-48" height="48" src="/secure/projectavatar?pid=10140&amp;avatarId=10080&amp;size=large" width="48" />
+        
+        <span>CONNECT</span>
+</h1>
+
+
+<ul class="breadcrumbs">
+    <li><a id="project-name-val" href="/browse/CONN">CONNECT</a></li>
+    
+    <li><a id="key-val" rel="14830" href="/browse/CONN-313">CONN-313</a></li>
+</ul>
+
+<h2 id="issue_header_summary" class="item-summary"><a href="/browse/CONN-313">As a CONNECT adopter, I want CONNECT 4.0 to  be tested on WebSphere 7.x using  JDK 1.6 to validate that CONNECT will work in my preferred enviornment</a></h2>
+
+    
+    </div>
+    
+
+
+
+
+    <div class="command-bar">
+        <div class="ops-cont">
+            <div class="ops-menus">
+                
+                
+                    <ul id="opsbar-login" class="first ops">
+                        <li id="ops-login" class="last">
+                            <a id="ops-login-lnk" class="button first last" href="/login.jsp?os_destination=%2Fbrowse%2FCONN-313">Log In</a>
+                        </li>
+                    </ul>
+                
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                
+                
+                    
+                        <ul class="ops" id="view-drop">
+                            <li>
+                                <div class="aui-dd-parent">
+                                    <a href="#" title="View this issue in another format" class="drop lnk aui-dd-link standard icon-views"><span>Views</span></a>
+                                        <div class="aui-dropdown standard hidden">
+                                        <ul class="first last">
+                                            
+                                                <li class="dropdown-item">
+                                                    <a class="item-link" rel="nofollow" href="/si/jira.issueviews:issue-xml/CONN-313/CONN-313.xml">XML</a>
+                                                </li>
+                                            
+                                                <li class="dropdown-item">
+                                                    <a class="item-link" rel="nofollow" href="/si/jira.issueviews:issue-word/CONN-313/CONN-313.doc">Word</a>
+                                                </li>
+                                            
+                                                <li class="dropdown-item">
+                                                    <a class="item-link" rel="nofollow" href="/si/jira.issueviews:issue-html/CONN-313/CONN-313.html">Printable</a>
+                                                </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    
+                
+            </div>
+        </div>
+    </div>          
+
+
+    <div class="btm"></div>
+</div>
+<div id="main-content">
+    <div class="active-area">
+        <div class="column" id="primary">
+            <div class="content">
+                
+
+
+                
+                
+                
+                
+
+                    <div id="details-module" class="module toggle-wrap">
+                        <div class="mod-header">
+                            <h3 class="toggle-title">Details</h3>
+                        </div>
+                        <div class="mod-content">
+                            <ul id="issuedetails" class="property-list two-cols">
+    <li class="item">
+        <div class="wrap">
+            <strong class="name">Type:</strong>
+            <span id="type-val" class="value">
+                                                        <img alt="User Story" height="16" src="/images/icons/ico_story.png" title="User Story - A user story describing &quot;As a [person], I would like to [do something], so that I can [reach a goal].&quot;" width="16" />
+             User Story
+            </span>
+        </div>
+    </li>
+    <li class="item item-right">
+        <div class="wrap">
+            <strong class="name">Status:</strong>
+            <span id="status-val" class="value">
+                                                        <img alt="Open" height="16" src="/images/icons/status_open.gif" title="Open - The issue is open and ready for the assignee to start work on it." width="16" />
+             Open
+            </span>
+        </div>
+    </li>
+            <li class="item">
+            <div class="wrap">
+                <strong class="name">Priority:</strong>
+                <span id="priority-val" class="value">
+                                                                <img alt="Minor" height="16" src="/images/icons/priority_minor.gif" title="Minor - Minor loss of function, or other problem where easy workaround is present." width="16" />
+             Minor
+                </span>
+            </div>
+        </li>
+                                <li class="item item-right">
+            <div class="wrap">
+                <strong class="name">Resolution:</strong>
+                <span id="resolution-val" class="value unresolved" >
+                                    Unresolved
+                                </span>
+            </div>
+        </li>
+                <li class="item">
+            <div class="wrap">
+                <strong class="name">Affects Version/s:</strong>
+                <span id="versions-val" class="value">
+                                            None
+                                    </span>
+            </div>
+        </li>
+                <li class="item item-right">
+            <div class="wrap">
+                <strong class="name">Fix Version/s:</strong>
+                <span id="fixfor-val" class="value">
+                                            <span class="shorten" id="fixVersions-field">
+                                                            <a href="/browse/CONN/fixforversion/10330" title="Product Backlog Ranked backlog of user stories for CONNECT product.">Product Backlog</a>                                                    </span>
+                                    </span>
+            </div>
+        </li>
+                <li class="item">
+            <div class="wrap">
+                <strong class="name">Component/s:</strong>
+                <span id="components-val" class="value">
+                                            None
+                                    </span>
+            </div>
+        </li>
+                    <li class="item full-width">
+            <div class="wrap" id="wrap-labels">
+                <strong class="name">Labels:</strong>
+                    <div class="labels-wrap value">
+            <span class="labels" id="labels-14830-value">None</span>
+                </div>
+            </div>
+        </li>
+        </ul>
+
+
+                            
+                                
+
+<div id="customfieldmodule">
+    
+
+    
+    
+    <ul id="tabCellPane1" class="property-list">
+        
+        
+            
+                
+                
+                    <li id="rowForcustomfield_10020" class="item">
+                        <div class="wrap">
+                            <strong title="LOE" class="name">LOE:</strong>
+                            <div id="customfield_10020-val" class="value type-select">
+                                  Unknown
+
+                            </div>
+                        </div>
+                    </li>
+                
+            
+        
+            
+                
+                
+                    <li id="rowForcustomfield_10041" class="item">
+                        <div class="wrap">
+                            <strong title="Reporting Organization" class="name">Reporting Organization:</strong>
+                            <div id="customfield_10041-val" class="value type-select">
+                                  CMS
+
+                            </div>
+                        </div>
+                    </li>
+                
+            
+        
+    </ul>
+    
+</div>
+
+                            
+                        </div>
+                    </div>
+
+                    
+
+
+
+
+<div id="descriptionmodule" class="module toggle-wrap">
+    <div class="mod-header">
+        <h3 class="toggle-title">Description</h3>
+    </div>
+    <div id="issue-description" class="mod-content">
+        <p>HISTORY: <br/>
+CONNECT 4.0 supports multiple application servers. For details on the app servers and OS environments that the 4.0 release was tested on  refer to the release testing wiki link- <a href="https://developer.connectopensource.org/display/CONNECT40/Release+Testing">https://developer.connectopensource.org/display/CONNECT40/Release+Testing</a>. The WS environments supported by this release include WebSphere Enterprise 8.5 and WebSphere CE 3.0.0.2. CMS is using WAS 7 and JDK 1.6 for the OFM program. SSA plans to WAS 7 as well and will plan on taking 4.0 in the next 6-18 months. CMS is concerned about using CONNECT on a version that is not supported and requires that we test and support using their environment(WAS 7/JDK 1.6). We received some input from CMS that JDK 1.7 may not work with WAS 7 or is not supported for WAS 7. THis was tested as part of <a href="/browse/CONN-279" title="As a CONNECT adopter, I want CONNECT 4.0 to  be tested on WebSphere 7.x to validate whether CONNECT will work in my preferred enviornment"><del>CONN-279</del></a> and it was validated that it is indeed the case. On the other side JDK 1.6 is no longer supported and/or public updates may not be available after Feb 2013. However CMS does not see that them moving to WAS 8.5 for the next 5 years. While they would like to use 4.0 in the immediate future, they are concerned that they do not want to use it in an environment that is not supported or has not been tested. SSA has told us that WAS bundles 7.x with JDK 1.6 and hence they would need support in that environment as well.</p>
+
+<p>The goal is to support our partners in their preferred environment, else they will not be able to use the features possible with 4.0.</p>
+
+<p>CONSIDERATION/DETAIL:<br/>
+THIS IS A RESEARCH TICKET TO UNDERSTAND THE IMPACT OF MODIFYING 4.0 CODE TO SUPPORT JDK 1.6.<br/>
+CONNECT 4.0 code base uses JDK 1.7. Test 4.0 on WAS 7 using JDK 1.6 and assess the LOE to make this change.<br/>
+We need to also know if there any features that will not work if JDK 1.6 is used.</p>
+
+<p>CONSTRAINTS: <br/>
+1)The development team would need to acquire licenses for appropriate versions of the WAS application server that the CMS OFM team uses. <br/>
+2)Work with the CMS dev team if there are any questions</p>
+
+<p>BUSINESS VALUE:<br/>
+Support partners as they move to CONNECT 4.0 in their preferred environment(WAS 7/JDK 1.6).<br/>
+Help estimate level of effort to add changes  to support this environment.</p>
+
+<p>COMPLETION CRITERIA:<br/>
+Test WAS 7 running using JDK 1.6. Document how this was done and issues faced.<br/>
+Note particularly if any features we think will not work as desired.<br/>
+Estimate Level of Effort to make this change in the 4.0 code base. </p>
+
+
+
+
+
+    </div>
+</div>
+
+
+
+
+
+                    
+                        
+                            
+
+
+
+
+
+
+                            
+
+<div class="module toggle-wrap" id="linkingmodule">
+    <div class="mod-header">
+        
+        <h3 class="toggle-title">Issue Links</h3>
+    </div>
+	<div class="mod-content">
+        <div class="view-links-wrap">
+        
+            
+            <table class="issue-links last" cellpadding="0" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th colspan="2">Supports</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td width="50%">
+                            <div class="link-wrap">
+                                
+
+
+    <table id="outwardLinks_table" class="t_links" cellpadding="0" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>
+                    This issue <em>supports</em>:
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+        
+        <tr>
+            
+
+<td>
+    <div class="flooded">
+        <div class="attribute-wrap">
+            
+            <span class="priority">
+                
+ 
+
+
+
+
+<img src="/images/icons/priority_major.gif" height="16" width="16" border="0" align="absmiddle" alt="Major" title="Major - Major loss of function.">
+
+
+
+
+
+
+            </span>
+            
+            <span class="status">
+                
+ 
+
+
+
+
+<img src="/images/icons/status_open.gif" height="16" width="16" border="0" align="absmiddle" alt="Open" title="Open - The issue is open and ready for the assignee to start work on it.">
+
+
+
+
+
+
+            </span>
+        </div>
+        <a href="/browse/CONN-241" title="CONNECT 4.0 - websphere 7 and jdk 1.6">
+        
+        CONN-241</a>
+        CONNECT 4.0 - websphere 7 and jdk 1.6
+    </div>
+</td>
+
+        </tr>
+        
+        </tbody>
+    </table>
+
+
+
+
+                            </div>
+                        </td>
+                        <td width="50%">
+                            
+
+
+&nbsp;
+
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        
+            </div>
+    </div>
+</div>
+
+
+                            
+
+
+
+                        
+                    
+
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    
+
+
+
+
+
+
+
+
+
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description rdf:about="https://issues.connectopensource.org/browse/CONN-313"
+    dc:title="[#CONN-313] As a CONNECT adopter, I want CONNECT 4.0 to  be tested on WebSphere 7.x using  JDK 1.6 to validate that CONNECT will work in my preferred enviornment"
+    dc:subject="CONNECT"
+    dc:description="HISTORY: 
+CONNECT 4.0 supports multiple application servers. For details on the app servers and OS  ..."
+    dc:date="2013-03-13 09:49:36,115"
+    dc:identifier="https://issues.connectopensource.org/browse/CONN-313"
+    trackback:ping="https://issues.connectopensource.org/rpc/trackback/CONN-313"/>
+
+<rdf:Description rdf:about="https://issues.connectopensource.org/secure/ViewIssue.jspa?id=14830"
+    dc:title="[#CONN-313] As a CONNECT adopter, I want CONNECT 4.0 to  be tested on WebSphere 7.x using  JDK 1.6 to validate that CONNECT will work in my preferred enviornment"
+    dc:subject="CONNECT"
+    dc:description="HISTORY: 
+CONNECT 4.0 supports multiple application servers. For details on the app servers and OS  ..."
+    dc:date="2013-03-13 09:49:36,115"
+    dc:identifier="https://issues.connectopensource.org/secure/ViewIssue.jspa?id=14830"
+    trackback:ping="https://issues.connectopensource.org/rpc/trackback/CONN-313"/>
+
+<rdf:Description rdf:about="https://issues.connectopensource.org/secure/ViewIssue.jspa?key=CONN-313"
+    dc:title="[#CONN-313] As a CONNECT adopter, I want CONNECT 4.0 to  be tested on WebSphere 7.x using  JDK 1.6 to validate that CONNECT will work in my preferred enviornment"
+    dc:subject="CONNECT"
+    dc:description="HISTORY: 
+CONNECT 4.0 supports multiple application servers. For details on the app servers and OS  ..."
+    dc:date="2013-03-13 09:49:36,115"
+    dc:identifier="https://issues.connectopensource.org/secure/ViewIssue.jspa?key=CONN-313"
+    trackback:ping="https://issues.connectopensource.org/rpc/trackback/CONN-313"/>
+</rdf:RDF>-->
+
+
+
+                
+
+
+                <div id="activitymodule" class="module toggle-wrap">
+                    <div class="mod-header">
+                        <h3 class="toggle-title">Activity</h3>
+                    </div>
+                    <div class="mod-content">
+                        
+
+
+
+    <div class="tabwrap tabs2">
+        
+            <div class="sortwrap">
+                
+                    <a class="icon icon-sort-down" rel="nofollow" href="/browse/CONN-313?actionOrder=desc#issue-tabs" title="Ascending order - Click to sort in descending order"><span>Ascending order - Click to sort in descending order</span></a>
+                
+                
+            </div>
+        
+        <ul id="issue-tabs" class="tabs horizontal">
+        
+            
+            
+                <li><a id="all-tabpanel" href="/browse/CONN-313?page=com.atlassian.jira.plugin.system.issuetabpanels%3Aall-tabpanel#issue-tabs"><strong>All</strong></a></li>
+            
+        
+            
+                <li id="comment-tabpanel" class="active"><strong>Comments</strong></li>
+            
+            
+        
+            
+            
+                <li><a id="worklog-tabpanel" href="/browse/CONN-313?page=com.atlassian.jira.plugin.system.issuetabpanels%3Aworklog-tabpanel#issue-tabs"><strong>Work Log</strong></a></li>
+            
+        
+            
+            
+                <li><a id="changehistory-tabpanel" href="/browse/CONN-313?page=com.atlassian.jira.plugin.system.issuetabpanels%3Achangehistory-tabpanel#issue-tabs"><strong>History</strong></a></li>
+            
+        
+            
+            
+                <li><a id="activity-stream-issue-tab" href="/browse/CONN-313?page=com.atlassian.streams.streams-jira-plugin%3Aactivity-stream-issue-tab#issue-tabs"><strong>Activity</strong></a></li>
+            
+        
+        </ul>
+    </div>
+    
+        <div class="issuePanelContainer" id="issue_actions_container">
+        
+            
+                
+                <div id="comment-16743" class="issue-data-block activity-comment twixi-block expanded">
+    <div class="twixi-wrap verbose actionContainer">
+        <a href="#" class="twixi"><span class="icon twixi-opened"><span>Hide</span></span></a>
+        <div class="action-links">
+            <a href="/browse/CONN-313?focusedCommentId=16743&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-16743" title="A permanent link to this comment." class="icon icon-perma"><span>Permalink</span></a>
+                                </div>
+        <div class="action-details">    
+    
+    
+                
+    <a class="user-hover user-avatar" rel="nareshcgi" style="background-image:url(/secure/useravatar?size=small&ownerId=nareshcgi&avatarId=10028&loggedout=true);" id="commentauthor_16743_verbose" href="/secure/ViewProfile.jspa?name=nareshcgi">Naresh Subramanyan</a>
+ added a comment  - <span class=subText><span class=date>13/Mar/13 12:17 PM</span></span>  </div>
+        <div class="action-body flooded"><p>IBM java JDK/SDK 6 is officially supported till 09/2017 and also for IBM WAS 7.x there is no End of Service (EOS) date specified. Find more information from the below links:<br/>
+<a href="http://www.ibm.com/developerworks/java/jdk/lifecycle/index.html#eos">http://www.ibm.com/developerworks/java/jdk/lifecycle/index.html#eos</a><br/>
+<a href="http://www-01.ibm.com/software/websphere/support/lifecycle/">http://www-01.ibm.com/software/websphere/support/lifecycle/</a></p> </div>
+    </div>
+    <div class="twixi-wrap concise actionContainer">
+        <a href="#" class="twixi"><span class="icon twixi-closed"><span>Show</span></span></a>
+        <div class="action-details flooded">
+                
+    
+    
+                
+    <a class="user-hover user-avatar" rel="nareshcgi" style="background-image:url(/secure/useravatar?size=small&ownerId=nareshcgi&avatarId=10028&loggedout=true);" id="commentauthor_16743_concise" href="/secure/ViewProfile.jspa?name=nareshcgi">Naresh Subramanyan</a>
+ added a comment  - <span class=subText><span class=date>13/Mar/13 12:17 PM</span></span>               IBM java JDK/SDK 6 is officially supported till 09/2017 and also for IBM WAS 7.x there is no End of Service (EOS) date specified. Find more information from the below links:
+<a href="http://www.ibm.com/developerworks/java/jdk/lifecycle/index.html#eos">http://www.ibm.com/developerworks/java/jdk/lifecycle/index.html#eos</a>
+<a href="http://www-01.ibm.com/software/websphere/support/lifecycle/">http://www-01.ibm.com/software/websphere/support/lifecycle/</a>         </div>
+    </div>
+</div>
+
+                
+            
+        
+        
+        </div>
+    
+
+
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+
+        <div class="column" id="secondary">
+            <div class="content">
+                
+                    
+                        <div id="peoplemodule" class="module toggle-wrap">
+    <div class="mod-header">
+        <h3 class="toggle-title">People</h3>
+    </div>
+    <div class="mod-content">
+        <ul class="item-details" id="peopledetails">
+            <li class="people-details">
+                                <dl>
+                    <dt>Assignee:</dt>
+                    <dd id="assignee-val">
+                        Unassigned
+                    </dd>
+                </dl>
+                                                <dl>
+                    <dt>Reporter:</dt>
+                    <dd id="reporter-val">
+                                <a class="user-hover" rel="deepthi.rodrigues@cgifederal.com" id="issue_summary_reporter_deepthi.rodrigues@cgifederal.com" href="/secure/ViewProfile.jspa?name=deepthi.rodrigues%40cgifederal.com">Deepthi Rodrigues</a>
+                    </dd>
+                </dl>
+                                            </li>
+        </ul>
+                <div id="votes-val">
+                                        <span id="vote-label" title="You have to be logged in to vote for an issue."><span class="icon icon-vote-disabled"></span><span class="action-text">Vote</span></span>
+                        
+                                        (<span id="vote-data">0</span>)
+                    </div>
+                        <div id="watchers-val">
+                            <span id="watch-label" title="You have to be logged in to watch an issue."><span class="icon icon-watch-disabled"></span>Watch</span>
+            
+                        
+                            (<span id="watcher-data">0</span>)
+                    </div>
+            </div>
+</div>
+
+                        
+<div id="datesmodule" class="module toggle-wrap">
+    <div class="mod-header">
+        <h3 class="toggle-title">Dates</h3>
+    </div>
+    <div class="mod-content">
+        <ul class="item-details">
+            <li>
+            
+                <dl class="dates">
+                    <dt>Created:</dt>
+                    <dd id="create-date" class="date">Today 9:49 AM</dd>
+                </dl>
+                <dl class="dates">
+                    <dt>Updated:</dt>
+                    <dd id="updated-date" class="date">Today 4:18 PM</dd>
+                </dl>
+            
+            
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+                        
+
+
+                    
+                
+            </div>
+        </div>
+        
+            
+                
+            
+        
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="footer">
+<div class="poweredbymessage">
+        <a href="http://www.atlassian.com/software/jira" class="smalltext">Atlassian JIRA</a>
+        <span id="footer-build-information"  style="color: #666666;" >(v4.2.4-b591#591)</span>
+        | <a href="http://support.atlassian.com/secure/CreateIssue.jspa?issuetype=1&amp;pid=10000">Report a problem</a>
+    </div>
+            <div class="licensemessage">
+                    Powered by a free Atlassian <a href='http://www.atlassian.com/software/jira'>JIRA</a> open source license for CONNECT Solution. Try JIRA - <a href='http://www.atlassian.com/software/jira'>bug tracking software</a> for <i>your</i> team.
+
+                </div>
+    </div>
+
+<form id="jira_request_timing_info" class="dont-default-focus" >
+	<fieldset class="hidden">
+		<input type="hidden" name="jira.request.start.millis" value="1363210415142" />
+		<input type="hidden" name="jira.request.server.time" value="61" />
+		<input type="hidden" name="jira.session.expiry.time" value="1363228408530" />
+		<input type="hidden" name="jira.session.expiry.in.mins" value="299" />
+	</fieldset>
+</form>
+<!--
+	                 REQUEST ID : 1053x5071x1
+	          REQUEST TIMESTAMP : [13/Mar/2013:17:33:35 -0400]
+	               REQUEST TIME : 0.0610
+	                 ASESSIONID : c3bgf3
+	        CONCURRENT REQUESTS : 1
+-->
+</body>
+</html>
