@@ -24,3 +24,5 @@ req.sublime-project
 req.sublime-workspace
 lucene-features.db
 mine-issue-tracker.pdf
+aws-hosts.pem
+server-info

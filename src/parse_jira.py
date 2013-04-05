@@ -3,8 +3,8 @@ import json
 import datetime
 from Jira_Issue import Jira_Issue
 
-DB_LOC = '/Users/nernst/Dropbox/research/projects/req-issues/'
-DB_NAME = 'lucene-features.db'
+DB_LOC = '/Users/nernst/Documents/projects/req-issues/'
+DB_NAME = 'connect-features.db'
 
 
 def parse_issue(issue_arg):
@@ -12,7 +12,7 @@ def parse_issue(issue_arg):
     #ssue_pre = 'LUCENE-'
     issue_num = issue_arg
     base_url = 'https://issues.apache.org/jira/rest/api/latest/issue/'
-
+    base_url = 'https://issues.connectopensource.org/jira/rest/api/latest/issue/'
     url = base_url + issue_num
     issue = Jira_Issue(issue_num)
     print url

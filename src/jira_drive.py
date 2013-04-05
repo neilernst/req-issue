@@ -8,6 +8,7 @@ import parse_jira as pj
 
 prot = 'https://'
 query_url = 'issues.apache.org/jira/rest/api/latest/search?maxResults=100&jql='
+query_url = 'issues.connectopensource.org/rest/api/latest/search?maxResults=100&jql='
 query = "project='LUCENE' AND (status='In Progress' OR status=Open) \
     AND type='New Feature' AND priority=Major"
 
